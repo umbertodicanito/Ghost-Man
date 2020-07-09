@@ -8,7 +8,7 @@
 # **[Click here to play](https://sapienzainteractivegraphicscourse.github.io/final-project-ghost-man/html/ "direct link to play the game")**
 
 ------------
-![](https://github.com/SapienzaInteractiveGraphicsCourse/final-project-ghost-man/blob/master/images/overview-image.png)
+![](https://github.com/umbertodicanito/Ghost-Man/blob/master/images/overview-image.png)
 
 ------------
 #### Documentation
