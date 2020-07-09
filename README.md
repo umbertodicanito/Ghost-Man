@@ -5,7 +5,7 @@
 ------------
 #### Overview
 **GHOST-MAN** is a single player game done for the project assignment of Interactive Graphics course of Sapienza University in Rome. The main goal of this game is to reach the highest score possible moving the ghost on the pitch and eating the pac-coin that spawn in the ground. 
-# **[Click here to play](https://sapienzainteractivegraphicscourse.github.io/final-project-ghost-man/html/ "direct link to play the game")**
+# **[Click here to play](https://umbertodicanito.github.io/Ghost-Man/html/ "direct link to play the game")**
 
 ------------
 ![](https://github.com/umbertodicanito/Ghost-Man/blob/master/images/overview-image.png)
