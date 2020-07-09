@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>𝔾𝕙𝕠𝕤𝕥-𝕄𝕒𝕟</title>
+
+        <!-- Libraries-->
+        <!--ThreeJS-->
+        <script src="https://threejs.org/build/three.js"></script>
+        <script src="https://threejs.org/build/three.min.js"></script>
+        <script src="https://threejs.org/build/three.module.js"></script>
+        <script src="https://threejs.org/examples/js/postprocessing/EffectComposer.js"></script>
+        <script src="https://threejs.org/examples/js/postprocessing/RenderPass.js"></script>
+        <script src="https://threejs.org/examples/js/postprocessing/MaskPass.js"></script>
+        <script src="https://threejs.org/examples/js/postprocessing/ShaderPass.js"></script>
+        <script src="https://threejs.org/examples/js/shaders/CopyShader.js"></script>
+        <script src="https://threejs.org/examples/js/shaders/FXAAShader.js"></script>
+        <script src="https://threejs.org/examples/js/shaders/ConvolutionShader.js"></script>
+        <script src="https://threejs.org/examples/js/shaders/LuminosityHighPassShader.js"></script>
+        <script src="https://threejs.org/examples/js/postprocessing/UnrealBloomPass.js"></script>
+        <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+        <!-- CSS files-->
+        <link rel="stylesheet" type="text/css" href="../css/ingame.css">
+
+        <!-- Icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../images/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../images/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../images/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../images/icons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="../images/icons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="../images/icons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="../images/icons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="../images/icons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="../images/icons/mstile-310x310.png" />
+
+
+    </head>
+    <body><!-- JS files-->
+        <script src="../js/intraInfo.js"></script>
+        <script src="../js/ghost.js"></script>
+        <script src="../js/ground.js"></script>
+        <script src="../js/coin.js"></script>
+        <script src="../js/stars.js"></script>
+        <script src="../js/audio.js"></script>
+        <script src="../js/ingame.js"></script>
+
+        <div id="currentScore">000000000</div>
+
+        <!-- this popup is shown when the user press the Esc on keyboard-->
+        <div id="myPopupPause" class="popup">
+            <!-- Popup screen -->
+            <div class="popup-content">
+                <span id="closePause" class="close">&times;</span>
+                <p id="titlePopup">PAUSE</p>
+                <br>
+                <button id="btnHome" class="btnPause">HOMEPAGE</button>
+            </div>
+        </div>
+
+        <!-- this popup is shown when the user lose a match-->
+        <div id="myPopupDeath" class="popup">
+            <!-- Popup screen -->
+            <div class="popup-content">
+                <!--<span class="close">&times;</span>-->
+                <p id="titlePopup">YOU LOSE ☹</p>
+                <br>
+                <button id="btnRestart" class="btnPause">RESTART</button>
+                <br>
+                <br>
+                <button id="btnHomeLose" class="btnPause">HOMEPAGE</button>
+            </div>
+        </div>
+
+        <!-- this popup is shown before to start a match-->
+        <div id="myPopupInitGame" class="popup-init">
+            <!-- Popup screen -->
+            <div class="popup-content">
+                <!--<span class="close">&times;</span>-->
+                <p id="titlePopup">LET'S PLAY</p>
+                <br>
+                <p id="guidelines" >To move the ghost on the right press right arrow or "d/D".</p>
+                <p id="guidelines">-</p>
+                <p id="guidelines" >To move the ghost on the left press left arrow or "a/A".</p>
+                <p id="guidelines">-</p>
+                <p id="guidelines" >To pause game press "Esc".</p>
+                <br>
+                <button id="btnPlay" class="btnPause">PLAY ►</button>
+            </div>
+        </div>
+
+
+    </body>
+</html>

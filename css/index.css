@@ -1,0 +1,85 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Pokemon_Classic.ttf);
+}
+
+*{
+    overflow-x: hidden;
+    overflow-y: hidden
+}
+
+body {
+    background: url(../images/sfondoLabirinto.png);
+    background-size: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.title {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: myFirstFont;
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #0073e6, 0 0 10px #0073e6, 0 0 12.5px #0073e6, 0 0 15px #0073e6, 0 0 17.5px #0000ff;
+}
+
+.mainThreeBtnsContainer {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainBtns{
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: myFirstFont;
+    color: yellow;
+    background-color: blue;
+    margin: 10px;
+    font-size: 25px
+}
+
+.mainScoreBtnContainer {
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.div-wrapper_img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scale(1.5)
+}
+
+#gameDescDiv {
+    background-color: rgba(0, 0, 0, 0.2);;
+    margin: 33% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 3px solid yellow;
+    width: 40%; /* Could be more or less, depending on screen size */
+    font-family: myFirstFont;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    display: none;
+    position: relative;
+    z-index: 100;
+}

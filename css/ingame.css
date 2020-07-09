@@ -1,0 +1,146 @@
+/* HTML generic */
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Pokemon_Classic.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* canvas */
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: none; 
+    border: none; 
+
+}
+
+#currentScore{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display:block;
+    font-family: myFirstFont;
+    color:yellow;
+    text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #0073e6, 0 0 10px #0073e6, 0 0 12.5px #0073e6, 0 0 15px #0073e6, 0 0 17.5px #0000ff;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* The Modal (background) */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    text-align: center;
+}
+
+.popup-init {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    text-align: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+#guidelines{
+    color:white;
+    font-size: 10px;
+}
+
+#gif-init{
+    width: 5vw;
+}
+
+/* Modal Content/Box */
+.popup-content {
+    background-color: rgba(0, 0, 0, 0.6);;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 5px solid yellow;
+    width: 25%; /* Could be more or less, depending on screen size */
+    font-family: myFirstFont;
+    justify-content: center;
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnPause{
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: myFirstFont;
+    color: yellow;
+    background-color: blue;
+    margin: 0 auto;
+    font-size: 1vw;
+    text-align: center;
+    width: 55%;
+}
+
+#titlePopup {
+    font-family: myFirstFont;
+    color: white;
+    text-shadow: 0 0 1.25px #fff, 0 0 2.5px #fff, 0 0 3.75px #0073e6, 0 0 5px #0073e6, 0 0 6.25px #0073e6, 0 0 7.5px #0073e6, 0 0 8.775px #0000ff;
+    text-align: center;
+    font-size: 1.2vw;
+    margin-left:8%;
+}
+
+#x{
+    position: absolute;
+    z-index: 100;
+    bottom=500px;
+}
+
+#popupInitGame{
+    display: block;
+}

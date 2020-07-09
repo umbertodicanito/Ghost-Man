@@ -1,0 +1,92 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Pokemon_Classic.ttf);
+}
+
+body {
+    background: url(../images/sfondoLabirinto.png);
+    background-size: 100%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+a{
+    font-family: myFirstFont;
+    font-size: 10px;
+    color: yellow;
+}
+
+.textContainerTitle{
+    font-family: myFirstFont;
+    font-size: 30px;
+    color:yellow;
+    margin-left: 15px
+}
+
+.textContainer{
+    font-family: myFirstFont;
+    font-size: 20px;
+    color:yellow;
+    background-color:blue;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border:solid;
+    border-color:darkblue;
+    border-width: 5px;
+    border-radius: 15px;
+}
+
+.scoreButton{
+    font-family: myFirstFont;
+    font-size: 20px;
+    color:yellow;
+    background-color:blue;
+    border-radius: 15px;
+    border-width: 5px;
+    border-color: blue;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10% 0px 10% 0px;
+    width: 100%
+}
+
+.namesPlayers{
+    box-sizing:border-box;
+    float:left;
+}
+
+.charactersPlayer{
+    box-sizing:border-box;
+    float: left;
+    margin-left: 30px
+}
+
+.pointsPlayer{
+    margin-left: 90px;
+    box-sizing:border-box;
+    float: left
+}
+
+.selected{
+    box-shadow:0px 12px 22px 1px #333;
+}
+
+#tables {
+    float: left;
+    width: 70%;
+}
+
+#difficultyContainer{
+    margin-left: 5%;
+    margin-top: 6%;
+    width: 175px;
+    float:left;
+}

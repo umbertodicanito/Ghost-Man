@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <title>𝔾𝕙𝕠𝕤𝕥-𝕄𝕒𝕟</title>
+        <script src="../js/intraInfo.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/audio.js"></script>
+
+        <!-- CSS files -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+
+        <!-- Icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../images/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../images/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../images/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../images/icons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="../images/icons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="../images/icons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="../images/icons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="../images/icons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="../images/icons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="../images/icons/mstile-310x310.png" />
+    </head>
+    <body style="background-color: black">
+        <!--Images in background-->
+        <div id="imageBackgroundDown" class="div-wrapper_img" style="margin-left:0;">
+            <image style="transform: rotateY(180deg);margin-bottom: 10px" src="../images/pacman_fantasmi.png" ></image>
+        </div>
+        <div id="imageBackgroundUp" style="margin-left:0;">
+            <image  src="../images/pacman_fantasmi.png"></image>
+        </div>
+        <!--titles and buttons-->
+        <div class="title">
+            <h1 style="color:yellow;font-size: 60px">Ghost-Man</h1>
+        </div>
+        <div class="mainThreeBtnsContainer">
+            <button id="newGameNormal" class="mainBtns" onmouseover="showDescNorm();" onmouseout="hiddenDescDiv();">Normal</button>
+            <button id="newGameHard" class="mainBtns" onmouseover="showDescHard();" onmouseout="hiddenDescDiv();">Hard</button>
+            <button id="newGameCrazy" class="mainBtns" onmouseover="showDescCrazy();" onmouseout="hiddenDescDiv();">Crazy</button>
+        </div>
+        <div class="mainScoreBtnContainer">
+            <button id="scoresBtn" class="mainBtns">Scores</button>
+        </div>
+        
+        <div id="gameDescDiv"></div>
+        
+    </body>
+</html>
